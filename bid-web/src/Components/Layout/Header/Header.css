@@ -60,10 +60,13 @@
 .sell-menu {
     color: #E60C0C;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .menu {
     /*"grid grid-row-4 gap-3 p-3 items-center rounded-xl bg-[#F6F6F9] border-[#CACAD0] border-2 border-solid"*/
+    text-decoration: none;
+    color: black;
 }
 
 /* MYPAGE BAR */
