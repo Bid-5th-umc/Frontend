@@ -1,0 +1,24 @@
+.categoryBar {
+  width: full;
+  border-top: 2px solid #CCC;
+  border-bottom: 2px solid #CCC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14.69rem;
+  padding-top: 0.69rem;
+  padding-bottom: 0.69rem;
+  margin: auto;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.69rem;
+}
+
+.categoryImg {
+  width: 0.8125rem;
+  height: 0.6875rem;
+}
