@@ -1,12 +1,16 @@
-import './App.css';
-// import Layout from './Components/Layout/Layout';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import MainPage from './Pages/MainPage';
+import ShopMainPage from './Pages/ShopMainPage';
+import BidPage from './Pages/BidPage'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <MainPage/>
-    </div>
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+      <Route path="/sell" element={<ShopMainPage />} />
+      <Route path="/bid" element={<BidPage />} />
+    </Routes>
   );
 }
 

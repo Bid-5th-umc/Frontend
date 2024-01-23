@@ -1,33 +1,46 @@
-import React from 'react'
 import Mypage from './Mypage';
+import { useNavigate } from 'react-router-dom';
+import Login from '../../LoginModal/Login';
+import React, { useState } from 'react';
 
 const MypageBar = () => {
+  const [modalType, setModalType] = useState(null);
+  const navigate = useNavigate();
+
+  const openModal = (type) => {
+    setModalType(type);
+  };
+
+  const closeModal = () => {
+    setModalType(null);
+  };
 
   const mypageData = [
-    { id: "/", image: "image/Like.png", name: "Like" },
-    { id: "/", image: "image/Mypage.png", name: "Mypage" },
-    { id: "/", image: "image/Menu.png", name: "Menu" }
+    { id: "/like", image: "image/Like.png", name: "Like" },
+    { id: "/login", image: "image/Mypage.png", name: "Mypage" },
+    { id: "/menu", image: "image/Menu.png", name: "Menu" }
   ];
+
+  const handleMypageClick = () => {
+    openModal('/login');
+  };
 
   return (
     <div className='mypageBar'>
-      <Mypage
-        PageUrl={mypageData[0].id}
-        MypageImage={mypageData[0].image}
-        MypageName={mypageData[0].name}
-      />
-      <Mypage
-        PageUrl={mypageData[1].id}
-        MypageImage={mypageData[1].image}
-        MypageName={mypageData[1].name}
-      />
-      <Mypage
-        PageUrl={mypageData[2].id}
-        MypageImage={mypageData[2].image}
-        MypageName={mypageData[2].name}
-      />
+      {mypageData.map((data, index) => (
+        <Mypage
+          key={index}
+          PageUrl={data.id}
+          MypageImage={data.image}
+          MypageName={data.name}
+          onClick={handleMypageClick}
+        />
+      ))}
+      {modalType === '/login' && (
+        <Login onClose={closeModal} />
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default MypageBar
+export default MypageBar;
