@@ -22,7 +22,7 @@
     - **Refactor**: 코드 리펙토링
     - **Test**: 테스트 코드, 리펙토링 테스트 코드 추가
     - **Chore**: 빌드 업무 수정, 패키지 매니저 수정
-- 예시: `git commit -m "[feature(번호)] OO 기능 추가"`
+- 예시: `git commit -m "[Feat(번호): OO 기능 추가]"`
 
 ### 3. 🙌🏻 Github 레포지토리에 push하기
 
