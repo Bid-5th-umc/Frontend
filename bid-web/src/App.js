@@ -1,9 +1,9 @@
-import './App.css';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import MainPage from './Pages/MainPage';
 import ShopMainPage from './Pages/ShopMainPage';
 
-function App() {
+const App = () => {
   return (
     <Routes>
       <Route path="/" element={<MainPage />} />

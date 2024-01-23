@@ -1,15 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-const Mypage = ({ PageUrl, MypageImage, MypageName }) => {
-  
+const Mypage = ({ PageUrl, MypageImage, MypageName, onClick }) => {
   return (
-    <div
-      to={PageUrl}
-      className='mypage'      
-    >
-      <img src={MypageImage} alt={MypageName}></img>
-    </div>
-  )
+    <button className='mypage' onClick={onClick}>
+      <img src={MypageImage} alt={MypageName} />
+    </button>
+  );
 }
 
-export default Mypage
+export default Mypage;
