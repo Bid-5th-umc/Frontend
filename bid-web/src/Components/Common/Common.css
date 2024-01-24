@@ -1,4 +1,5 @@
 .categoryBar {
+  position: relative;
   width: full;
   border-top: 2px solid #CCC;
   border-bottom: 2px solid #CCC;
@@ -13,12 +14,36 @@
 
 .category {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 0.69rem;
+  font-size: 1.25rem;
 }
 
 .categoryImg {
   width: 0.8125rem;
   height: 0.6875rem;
+}
+
+.hover-card {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  width: 12.5rem;
+  height: 18.875rem;
+  background-color: white;
+  border: 2px solid #bebebe;
+  gap: 1.31rem;
+  padding-left: 1.56rem;
+  justify-content: center;
+}
+
+.hover-button {
+  border: none;
+  background-color: white;
+  text-decoration-line: underline;
+  font-size: 1.25rem;
+  text-align: left;
 }
