@@ -1,11 +1,12 @@
 import React from 'react'
 import Layout from '../Components/Layout/Layout'
-import CategoryBar from '../Components/Common/CategoryBar'
+import ShopMain from '../Components/Shop/ShopMain'
+
 
 const ShopMainPage = () => {
   return (
     <Layout>
-      <CategoryBar/>
+      <ShopMain/>
     </Layout>
   )
 }

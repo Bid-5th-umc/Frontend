@@ -8,3 +8,8 @@
     position : relative;
     transform : translateY(-100%);
   }
+
+  .layout {
+    width: 120rem;
+    height: auto;
+  }
