@@ -1,15 +1,15 @@
-.detail {
+.bidPage {
     width: full;
     height: 300vh;
 }
 
-.detailPage-containerTop {
+.bidPage-containerTop {
     display: flex;
     justify-content: center;
     margin: auto;
 }
 
-.detailPage-container {
+.bidPage-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -31,7 +31,7 @@
 .itemImg {
     width: 33.25rem;
     height: 44.125rem;
-    background-color: black;
+    background-color: #CCCCCC;
 }
 
 .itemInfo-container {
@@ -52,50 +52,14 @@
     font-weight: bold;
 }
 
-.nowPrice, .immediatePrice {
-    font-size: 1.25rem;
-}
-
-.endTime {
-    width: 26.938rem;
-    height: 1.938rem;
-    background-color: #F2F2F2;
-    color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2.813rem;
-    position: relative;
-    right: 0.5212rem;
-}
-
-.bidPrice-container {
-    height: 4.063rem;
-    font-size: 1.25rem;
-    margin-bottom: 3rem;
-}
-
-.inputBid {
-    width: 18.75rem;
-    height: 2.25rem;
-    text-align: right;
-    border-radius: 0.5rem;
-}
-
-.bidHigh {
-    width: 18.75rem;
-    height: 1.063rem;
-    font-size: 0.875rem;
-    position: absolute;
-    top: 2rem;
-    right: 0;
-}
 
 .bidBtn {
     width: 26.938rem;
     height: 2.5rem;
     margin-bottom: 4.688rem;
 }
+
+
 .bidBtn, .buyBar {
     display: flex;
     justify-content: center;
@@ -113,11 +77,27 @@
     margin-right: 1.063rem;
 }
 
-.detailBox {
+.toast {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    width: 18.75rem;
+    height: 3rem;
+    background: #000000;
+    color: #fff;
+    border-radius: 1.5rem;
+    border: 1px solid #000;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.938rem;
+  }
+
+.ItemDetail {
     height: 9rem;
 }
 
-.detailBox1, .detailBox2, .detailBox3 {
+.detailBox {
     height: 3rem;
     display: flex;
     justify-content: center;
@@ -125,19 +105,34 @@
     font-size: 0.938rem;
 }
 
-.detailEx {
+.leftBox, .rightBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstBox, .secondBox, .thirdBox, .fourthBox {
+    width: 6.25rem;
+    font-size: 0.938rem;
+}
+
+.secondBox, .fourthBox {
+    color: #808080;
+}
+
+.bidDetail {
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: left;
 }
 
-.txtEx-containerTop{
+.detailText-containerTop{
     width: 85.313rem;
     margin-bottom: 6.688rem;
 }
 
-.txtEx {
+.detailText {
     width: 43.813rem;
     height: 19.375rem;
     margin: 0 3.125rem;
@@ -145,26 +140,27 @@
     border-bottom: solid 1px #CCCCCC;
 }
 
-.txtTitle {
+.textTitle {
     font-size: 1.563rem;
     font-weight: bold;
+    margin-top: 2.188rem;
     margin-bottom: 2.938rem;
 }
 
-.txtContent {
+.textContent {
     font-size: 1.25rem;
 }
 
-.imgEx-containerTop {
+.detailImage-containerTop {
     width: 85.313rem;
 }
 
-.imgEx {
+.detailImage {
     height: auto;
     margin: 0 3.125rem;
 }
 
-.imgTile {
+.imageTitle {
     font-size: 1.875rem;
     font-weight: bold;
     margin-bottom: 1.875rem;

@@ -1,8 +1,8 @@
 import React from 'react'
 import Layout from '../Components/Layout/Layout'
-import Bidpage from '../Components/Layout/Detail/Detail'
+import Bidpage from '../Components/Bid/Bid'
 
-const ShopMainPage = () => {
+const BigPage = () => {
   return (
     <Layout>
       <Bidpage/>
@@ -10,4 +10,4 @@ const ShopMainPage = () => {
   )
 }
 
-export default ShopMainPage
+export default BigPage

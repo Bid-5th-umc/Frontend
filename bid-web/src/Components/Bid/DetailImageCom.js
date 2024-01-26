@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BigImage = ({BigImageUrl, BigimageName}) => {
+const DetailImageCom = ({BigImageUrl, BigimageName}) => {
   return (
     <div className='bigImages'>   
         <img className='bigimage' src={BigImageUrl} alt={BigimageName}></img>
@@ -8,4 +8,4 @@ const BigImage = ({BigImageUrl, BigimageName}) => {
   )
 }
 
-export default BigImage
+export default DetailImageCom
