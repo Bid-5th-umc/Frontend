@@ -1,7 +1,7 @@
 import React from 'react'
 import Buy from './Buy';
 
-const BidBtn = () => {
+const ItemBtn = () => {
   const buydata = [
     { text: "입찰하기", className: "bidding", bidOn: 'bidCheck' },
     { text: "즉시 구매", className: "buyNow" }
@@ -29,4 +29,4 @@ const BidBtn = () => {
   )
 }
 
-export default BidBtn
+export default ItemBtn
