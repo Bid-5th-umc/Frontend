@@ -65,7 +65,7 @@
     justify-content: center;
 }
 
-.bidding, .buyNow, .favorite, .linkCopy {
+.bidding, .buyNow, .favorite, .linkCopy, .deleteBtn {
     width: 5.938rem;
     height: 2.5rem;
     font-size: 0.938rem;
@@ -75,6 +75,16 @@
 
 .bidding, .buyNow, .favorite {
     margin-right: 1.063rem;
+}
+
+.deleteBtn {
+    width: 5.938rem;
+    height: 2.5rem;
+    font-size: 0.938rem;
+    border: none;
+    background-color: #000000;
+    color: white;
+    margin-left: 1.063rem;
 }
 
 .toast {
@@ -92,6 +102,65 @@
     align-items: center;
     font-size: 0.938rem;
   }
+.modalTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* 모달을 로그인 화면 위에 표시하기 위해 z-index 추가 */
+}
+
+.modalContainer {
+    width: 25.75rem;
+    height: 14.5rem;
+    flex-shrink: 0;
+    border-radius: 1.875rem;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2; /* 모달을 로그인 화면 위에 표시하기 위해 z-index 추가 */
+}
+
+.deleteTitle {
+    width: 13.29rem;
+    height: 2.813rem;
+    margin-top: 4.063rem;
+    font-size: 0.938rem;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delBtnContainer {
+    width: 12.5rem;
+    height: 2.063rem;
+    margin-top: 1.688rem;
+}
+
+.cancel, .delBtn {
+    width: 5.313rem;
+    height: 2.063rem;
+    border-radius: 6.25rem;
+    font-size: 0.938rem;
+    border: 1px solid #000;
+    justify-content: center;
+}
+
+.cancel {
+    background-color: #FFF;
+    margin-right: 1.875rem;
+}
+
+.delBtn {
+    background-color: #000;
+    color: #FFF;
+}
 
 .ItemDetail {
     height: 9rem;

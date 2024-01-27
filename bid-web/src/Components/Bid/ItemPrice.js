@@ -4,7 +4,7 @@ import Price from './Price'
 import { useState, useEffect } from 'react'
 import Toast from "./Toast";
 
-const PriceContainer = () => {
+const ItemPrice = () => {
 
   const [bidPrice, setBidPrice] = useState('');
   const [ToastStatus, setToastStatus] = useState(false);
@@ -71,4 +71,4 @@ const PriceContainer = () => {
   )
 }
 
-export default PriceContainer
+export default ItemPrice
