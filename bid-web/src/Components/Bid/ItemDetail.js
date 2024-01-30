@@ -1,5 +1,5 @@
 import React from 'react'
-import ItemDetailCom from './../ItemDetailCom';
+import ItemDetailCom from '../Bid/ItemDetailCom';
 
 const ItemDetail = () => {
   
