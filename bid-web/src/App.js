@@ -4,6 +4,7 @@ import MainPage from './Pages/MainPage';
 import ShopMainPage from './Pages/ShopMainPage';
 import BidPage from './Pages/BidPage'
 import JoinPage from './Pages/JoinPage';
+import OrderPage from './Pages/OrderPage';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Route path="/shop" element={<ShopMainPage />} />
       <Route path="/bid" element={<BidPage />} />
       <Route path="/join" element={<JoinPage />} />
+      <Route path="/order" element={<OrderPage />} />
     </Routes>
   );
 }
