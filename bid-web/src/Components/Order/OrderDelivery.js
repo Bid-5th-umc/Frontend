@@ -1,4 +1,3 @@
-
 import React from 'react'
 import DeliveryInfo from './DeliveryInfo';
 import Payment from './Payment';
