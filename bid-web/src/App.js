@@ -5,6 +5,9 @@ import ShopMainPage from './Pages/ShopMainPage';
 import BidPage from './Pages/BidPage'
 import JoinPage from './Pages/JoinPage';
 import OrderPage from './Pages/OrderPage';
+import Mypage from './Pages/MyPage';
+import Productmanager from './Pages/ProductManager';
+
 
 const App = () => {
   return (
@@ -14,6 +17,9 @@ const App = () => {
       <Route path="/bid" element={<BidPage />} />
       <Route path="/join" element={<JoinPage />} />
       <Route path="/order" element={<OrderPage />} />
+      <Route path="/mypage" element={<Mypage />} />
+      <Route path="/product-manage" element={<Productmanager />} />
+      
     </Routes>
   );
 }
