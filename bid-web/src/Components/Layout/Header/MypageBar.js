@@ -18,7 +18,6 @@ const MypageBar = () => {
   const mypageData = [
     { id: "/like", image: "image/Like.png", name: "Like" },
     { id: "/login", image: "image/Mypage.png", name: "Mypage" },
-    { id: "/menu", image: "image/Menu.png", name: "Menu" }
   ];
 
   const handleMypageClick = () => {

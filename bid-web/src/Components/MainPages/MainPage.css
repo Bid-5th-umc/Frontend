@@ -43,6 +43,7 @@
   width: 7.875rem;
   height: 2.75rem;
   flex-shrink: 0;
+  border: none;
   border-radius: 2.46875rem;
   background: #000;
   color: #fff;
