@@ -74,6 +74,7 @@
   width: 28.75rem;
   height: 3.0625rem;
   flex-shrink: 0;
+  border: none;
   border-radius: 6.25rem;
   background: #000;
   margin-top: 2.38rem;
