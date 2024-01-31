@@ -11,11 +11,11 @@ const PWContainer = ({ what, text }) => {
 
   return (
 
-    <div class="PWContainer">
+    <div className="PWContainer">
         <InputContainer what="비밀번호" text=" "></InputContainer>
 
 
-        <div class="PWcheck">
+        <div className="PWcheck">
             <InputWhat what = "비밀번호 확인"></InputWhat>
             {PWError && <div className="ErrorMessages">비밀번호가 일치하지 않습니다.</div>}
         </div>

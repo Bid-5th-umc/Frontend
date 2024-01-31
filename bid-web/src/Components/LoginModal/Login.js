@@ -13,18 +13,20 @@ const Login = ({ onClose }) => {
     onClose();
   };
 
+  const handleXButtonClick = () => {
+    onClose(); // Xbutton을 눌렀을 때 onClose 함수 호출
+  };
 
   return (
     <>
       <div className="modal-overlay" onClick={handleOverlayClick}>
         <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-          <Xbutton/>
-          <LoginLogo/>
-          <LoginInput/>
-          <LoginButtonContainer/>
-          <LoginLine/>
-          <JoinTextBox/>
-
+          <Xbutton onClick={handleXButtonClick} />
+          <LoginLogo />
+          <LoginInput />
+          <LoginButtonContainer />
+          <LoginLine />
+          <JoinTextBox />
         </div>
       </div>
     </>
