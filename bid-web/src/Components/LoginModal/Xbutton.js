@@ -1,13 +1,12 @@
-import React from 'react'
-import './Login.css'
+import React from 'react';
+import './Login.css';
 
-const Xbutton = () => {
+const Xbutton = ({ onClick }) => {
   return (
-    <button className='Xbutton'>
-      <img src="image/login-gray-ellipse.png" alt="Xbutton">
-      </img>
+    <button className='Xbutton' onClick={onClick}>
+      <img src="image/login-gray-ellipse.png" alt="Xbutton" />
     </button>
-  )
-}
+  );
+};
 
-export default Xbutton
+export default Xbutton;

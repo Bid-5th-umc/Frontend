@@ -6,6 +6,8 @@ import BidPage from './Pages/BidPage'
 import JoinPage from './Pages/JoinPage';
 import OrderPage from './Pages/OrderPage';
 import FinishOrderPage from './Pages/FinishOrderPage';
+import Mypage from './Pages/MyPage';
+import Productmanager from './Pages/ProductManager';
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
       <Route path="/join" element={<JoinPage />} />
       <Route path="/order" element={<OrderPage />} />
       <Route path="/finishOrder" element={<FinishOrderPage />} />
+      <Route path="/mypage" element={<Mypage />} />
+      <Route path="/product-manage" element={<Productmanager />} />
     </Routes>
   );
 }

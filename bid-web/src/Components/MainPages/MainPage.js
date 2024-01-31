@@ -8,7 +8,7 @@ import BestItem from "./BestItem";
 
 const MainPages = () => {
   return (
-    <div>
+    <div className="MainPages">
       <FirstBox />
       <TodaysBid />
       <DeadlineItem />
