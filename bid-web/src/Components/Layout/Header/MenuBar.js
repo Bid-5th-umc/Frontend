@@ -3,7 +3,7 @@ import Menu from './Menu';
 
 const MenuBar = () => {
   const menuData = [
-    { id: "/", text: "SELL", className: "sell-menu" },
+    { id: "/sell", text: "SELL", className: "sell-menu" },
     { id: "/shop", text: "SHOP", className: "menu" },
     { id: "/", text: "HOW", className: "menu" }
   ];
