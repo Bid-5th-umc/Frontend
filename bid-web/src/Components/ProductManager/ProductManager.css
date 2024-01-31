@@ -49,7 +49,7 @@
   height: 3.4375rem;
   flex-shrink: 0;
   background: #f7f7f7;
-  margin: 0;
+  margin-top: 1.69rem;
 }
 
 .ProductInformation,
@@ -264,28 +264,27 @@
 }
 
 .ProductArrows {
-    width: 88.75rem;
-display: flex;
-flex-direction: row;
-margin-top: 4.81rem;
-justify-content: space-between;
+  width: 88.75rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: 4.81rem;
+  justify-content: space-between;
 }
 
 .product-arrow-left-button {
-    width: 1.5rem;
-    height: 2.4895rem;
-    flex-shrink: 0;
-    cursor: pointer;
-    background-color: transparent;
-    border: 0;
+  width: 1.5rem;
+  height: 2.4895rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
 }
 
 .product-arrow-right-button {
-    width: 1.5rem;
-    height: 2.4895rem;
-    flex-shrink: 0;
-    cursor: pointer;
-    background-color: transparent;
-    border: 0;
+  width: 1.5rem;
+  height: 2.4895rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
 }
-

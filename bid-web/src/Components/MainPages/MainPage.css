@@ -1,16 +1,22 @@
+.MainPages{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .first-box {
-    position: relative;
-    width: 100%;
-    height: 34.0625rem;
-    flex-shrink: 0;
-    background: #E6E6E6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
+  position: relative;
+  width: 100%;
+  height: 34.0625rem;
+  flex-shrink: 0;
+  background: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .first-box-message,
 .trendy-text {
   color: #000;
@@ -19,7 +25,7 @@
   font-size: 1.5625rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 2.5rem; 
+  line-height: 2.5rem;
   letter-spacing: 0.04688rem;
 }
 
@@ -39,20 +45,20 @@
   flex-shrink: 0;
   border-radius: 2.46875rem;
   background: #000;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Pretendard Variable";
   font-size: 1.5625rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .second-box {
   width: 120rem;
   height: 258rem;
-  background: #FFF;
+  background: #fff;
 }
 
 .BlackText {
@@ -84,24 +90,25 @@
   max-width: 16.8875rem;
   height: 22.58369rem;
   flex-shrink: 0;
-  background: #E6E6E6;
-  margin: 0.92rem; 
+  background: #e6e6e6;
+  margin: 0.92rem;
   transition: background 0.3s; /* 부드러운 전환 효과 */
 
   &:hover {
-    background: #B3B3B3;
-  } 
+    background: #b3b3b3;
+  }
 }
 
 .Product-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
-  margin-top: 3.16rem; 
+  margin-top: 3.16rem;
+  width: 100rem;
 }
 
-.ArrowImage{
+.ArrowImage {
   width: 0.9375rem;
   height: 1.875rem;
   flex-shrink: 0;
@@ -110,10 +117,10 @@
 }
 
 .ArrowButton {
-  border: none; 
-  border-radius: 0; 
-  background-color: transparent; 
-  cursor: pointer; 
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  cursor: pointer;
   padding: 5.31rem;
 }
 
@@ -122,7 +129,7 @@
   width: 100%;
   height: 40.5625rem;
   flex-shrink: 0;
-  background: rgba(0, 0, 0, 0.40);
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,15 +143,14 @@
   margin-top: 12.2rem;
   margin-bottom: 12.2rem;
   display: flex;
-  flex-direction: column; 
-
+  flex-direction: column;
 }
 
 .BrandItem {
   width: 16.5625rem;
   height: 3.325rem;
   flex-shrink: 0;
-  color: #FFF;
+  color: #fff;
   font-family: "Pretendard Variable";
   font-size: 2.5rem;
   font-style: normal;
@@ -154,48 +160,40 @@
   white-space: nowrap;
 }
 
-.simple-line{
+.simple-line {
   width: 1.875rem;
   flex-shrink: 0;
   stroke-width: 2.5px;
-  stroke: #FFF;
+  stroke: #fff;
   margin-top: 4.32rem;
   margin-left: 0;
-
 }
 
-.BrandButtonContainer{
+.BrandButtonContainer {
   width: 83.5rem;
   display: flex;
   flex-direction: row;
-
 }
-
 
 .BrandButton {
   height: 1.63525rem;
   flex-shrink: 0;
-  color: #FFF;
+  color: #fff;
   font-family: Inter;
   font-size: 1.5625rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  background: transparent; 
-  border: none; 
+  background: transparent;
+  border: none;
   margin-top: 7.35rem;
-  margin-right: 11rem; 
+  margin-right: 11rem;
   margin-left: 0;
-  padding: 0;  
-  align-items:center; 
+  padding: 0;
+  align-items: center;
 
   &:hover {
     text-decoration: underline;
     color: inherit;
   }
-
 }
-
-
-
-
