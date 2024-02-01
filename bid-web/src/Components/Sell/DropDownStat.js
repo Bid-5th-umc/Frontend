@@ -1,12 +1,12 @@
 import React from 'react'
 
-const DropDownStat = () => {
+const DropDownStat = ({ onSelect }) => {
   return (
     <ul className='stat-dropdown-menu'>
-      <li>새상품</li>
-      <li>좋은 상태</li>
-      <li>약간의 사용감</li>
-      <li>사용감 있음</li>
+      <li onClick={() => onSelect('새상품')}>새상품</li>
+      <li onClick={() => onSelect('좋은 상태')}>좋은 상태</li>
+      <li onClick={() => onSelect('약간의 사용감')}>약간의 사용감</li>
+      <li onClick={() => onSelect('사용감 있음')}>사용감 있음</li>
     </ul >
   )
 }

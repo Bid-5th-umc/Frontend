@@ -4,20 +4,26 @@ import HoverCard from './HoverCard';
 
 const CategoryCom = ({ CategoryName }) => {
 
+  // const [ isClicked, setClicked ] = useState(false);
+  // const handleClick = () => {
+  //   setClicked(!isClicked);
+  // };
+
   const [isHovered, setHovered] = useState(false);
 
   return (
-    <div
+    <button
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className={`category ${isHovered ? 'hovered' : ''}`}
+      // onClick={handleClick}
+      className={`category ${isHovered ? 'clicked' : ''}`}
     >
       <span>
         {CategoryName}
       </span>
       <img src='/image/MoreIcon.png' alt='more' className='categoryImg'></img>
       {isHovered && <HoverCard/>}
-    </div>
+    </button>
   )
 }
 
