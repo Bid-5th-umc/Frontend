@@ -12,16 +12,28 @@ const ItemPrice = () => {
   const [bidImmediate, setbidImmediate] = useState(0);
   const [ToastStatus, setToastStatus] = useState(false);
   const [ToastMsg, setToastMsg] = useState("");
+  const [goToBid, setGoToBid] = useState(false);
 
   const handleInputBidPrice = e => {
     setBidPrice(e.target.value);
   }
 
+  useEffect(() => {
+    if (ToastStatus) {
+      setTimeout(() => setToastStatus(false), 2000);
+    }
 
-  const bidCheck = () => {
+    if(goToBid) {
+      setTimeout(() => navigate("/Order"), 1000);
+    }
+  }, [ToastStatus, goToBid]);
+
+  const BidCheck = () => {
     if (bidPrice > bidhigh) { //bidPrice(input값) bidhigh(현재 가격)
       setToastStatus(true);
       setToastMsg("입찰성공! 최고 금액 입찰자입니다.");
+      setGoToBid(true);
+
     } else {
       setToastStatus(true);
       setToastMsg("더 높은 금액으로 재입찰하세요");
@@ -29,17 +41,11 @@ const ItemPrice = () => {
 
   };
 
-  const bidOrder = () => {
+  const BidOrder = () => {
     if (bidPrice > bidImmediate)
       navigate("/Order");
   };
   
-
-  useEffect(() => {
-    if (ToastStatus) {
-      setTimeout(() => setToastStatus(false), 2000);
-    }
-  }, [ToastStatus]);
 
   return (
     <div>
@@ -62,10 +68,10 @@ const ItemPrice = () => {
       </div>
       <div className='bidBtn'>
         <div className='buyBar'>
-          <button type='button' className='bidding' onClick={bidCheck}>
+          <button type='button' className='bidding' onClick={BidCheck}>
             입찰하기
           </button>
-          <button type='button' className='buyNow' onClick={bidOrder}>
+          <button type='button' className='buyNow' onClick={BidOrder}>
             즉시 구매
           </button>
           <button className='favorite'>
