@@ -137,6 +137,14 @@
     align-items: center;
 }
 
+.depositTitle {
+    width: 13rem;
+    height: 2.813rem;
+    margin-top: 4.063rem;
+    font-size: 0.938rem;   
+    text-align: center;
+}
+
 .delBtnContainer {
     width: 12.5rem;
     height: 2.063rem;
