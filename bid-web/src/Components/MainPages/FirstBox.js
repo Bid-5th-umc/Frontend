@@ -1,5 +1,6 @@
 import React from "react";
 import "./MainPage.css";
+import { Link } from "react-router-dom";
 
 const FirstBox = () => {
   return (
@@ -12,9 +13,9 @@ const FirstBox = () => {
       </div>
       <br />
       <br />
-      <button id="sell-button" type="button" className="sell-button">
+      <Link to={'/sell'} className="sell-button">
         SELL
-      </button>
+      </Link>
     </div>
   );
 };
