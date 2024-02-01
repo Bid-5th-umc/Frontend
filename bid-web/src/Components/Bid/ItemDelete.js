@@ -36,7 +36,7 @@ const ItemDelete = () => {
       </div>
       <div className='bidBtn'>
         <div className='buyBar'>
-          <button className='linkCopy'>
+          <button className='linkCopy' style={{marginLeft: '13.375rem'}}>
             링크 복사
           </button>
           <button className='deleteBtn' onClick={handleItemDeleteClick}>

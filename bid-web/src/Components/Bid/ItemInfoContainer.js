@@ -8,7 +8,7 @@ import ItemDelete from './ItemDelete'
 const IteminfoContainer = () => {
 
   const userId = 1;
-  const postId = 1;
+  const postId = 2;
 
   return (
     <div className='itemInfo-container'>
