@@ -3,10 +3,13 @@ import './BidPrice.css'
 import Price from './Price'
 import { useState, useEffect } from 'react'
 import Toast from "./Toast";
+import { useNavigate } from 'react-router-dom'
 
 const ItemPrice = () => {
-
+  const navigate = useNavigate();
   const [bidPrice, setBidPrice] = useState('');
+  const [bidhigh, setBidhigh] = useState(0);
+  const [bidImmediate, setbidImmediate] = useState(0);
   const [ToastStatus, setToastStatus] = useState(false);
   const [ToastMsg, setToastMsg] = useState("");
 
@@ -16,7 +19,7 @@ const ItemPrice = () => {
 
 
   const bidCheck = () => {
-    if (bidPrice > 0) {
+    if (bidPrice > bidhigh) { //bidPrice(input값) bidhigh(현재 가격)
       setToastStatus(true);
       setToastMsg("입찰성공! 최고 금액 입찰자입니다.");
     } else {
@@ -25,6 +28,12 @@ const ItemPrice = () => {
     }
 
   };
+
+  const bidOrder = () => {
+    if (bidPrice > bidImmediate)
+      navigate("/Order");
+  };
+  
 
   useEffect(() => {
     if (ToastStatus) {
@@ -35,14 +44,14 @@ const ItemPrice = () => {
   return (
     <div>
       <div className='price-container'>
-        <Price />
+        <Price setBidhigh={setBidhigh} setbidImmediate={setbidImmediate} />
         <div className='endTime'>
             <span>마감날짜</span>
         </div>
         <div className='bidPrice-container' style={{position: 'relative'}}>
             <form id='priceForm'>
                 <label>입찰금액<input type="text" className="inputBid" value={bidPrice} onChange={handleInputBidPrice} style={{position: 'absolute', right: '0'}}/></label>
-                <p className='bidHigh'>다음 입찰 금액은  입니다.</p>
+                <p className='bidHigh'>다음 입찰 금액은 {bidhigh.toLocaleString("ko-KR")} 원 이상입니다.</p>
                 {ToastStatus && (
                   <>
                     <Toast msg={ToastMsg} />
@@ -53,10 +62,10 @@ const ItemPrice = () => {
       </div>
       <div className='bidBtn'>
         <div className='buyBar'>
-          <button type='submit' className='bidding' onClick={bidCheck}>
+          <button type='button' className='bidding' onClick={bidCheck}>
             입찰하기
           </button>
-          <button type='submit' className='buyNow'>
+          <button type='button' className='buyNow' onClick={bidOrder}>
             즉시 구매
           </button>
           <button className='favorite'>

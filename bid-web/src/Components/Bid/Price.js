@@ -1,11 +1,17 @@
 import React from 'react'
 import PriceCom from './PriceCom';
+import { useState } from 'react';
 
-const Price = () => {
+const Price = (props) => {
+  const [nowPrice, setNowPrice] = useState(110000);
+  const [immediatePrice, setimmediatePrice] = useState(110000);
+
+  props.setBidhigh(nowPrice);
+  props.setbidImmediate(immediatePrice);
 
   const price = [
-    {topClassname: 'nowPrice', labelClass: 'nowLabel', priceClass: 'price1', priceLabel: '현재 가격', price: '₩100,000'},
-    {topClassname: 'immediatePrice', labelClass: 'immediatePriceLabel', priceClass: 'price2', priceLabel: '즉시 결제 가격', price: '₩100,000'}
+    {topClassname: 'nowPrice', labelClass: 'nowLabel', priceClass: 'price1', priceLabel: '현재 가격'},
+    {topClassname: 'immediatePrice', labelClass: 'immediatePriceLabel', priceClass: 'price2', priceLabel: '즉시 결제 가격'}
   ];
 
 
@@ -16,14 +22,14 @@ const Price = () => {
           labelClass={price[0].labelClass}
           priceClass={price[0].priceClass}
           priceLabel={price[0].priceLabel}
-          price={price[0].price} 
+          price={'₩' + nowPrice.toLocaleString("ko-KR")} 
       />
       <PriceCom 
         topClassName={price[1].topClassname}
         labelClass={price[1].labelClass}
         priceClass={price[1].priceClass}
         priceLabel={price[1].priceLabel}
-        price={price[1].price} 
+        price={'₩' + immediatePrice.toLocaleString("ko-KR")}
       />
     </div>
   )

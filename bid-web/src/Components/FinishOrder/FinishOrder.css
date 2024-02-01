@@ -70,6 +70,12 @@
   text-align: right;
 }
 
+.finshiOrderNum {
+  width: 59%;
+  text-align: right;
+  color: #E60C0C;
+}
+
 .finishAdd-container  {
   display: flex;
   justify-content: space-between;
