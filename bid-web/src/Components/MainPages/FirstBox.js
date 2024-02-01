@@ -13,7 +13,7 @@ const FirstBox = () => {
       </div>
       <br />
       <br />
-      <Link to={'/sell'} id="sell-button" type="button" className="sell-button">
+      <Link to={'/sell'} className="sell-button">
         SELL
       </Link>
     </div>
