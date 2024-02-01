@@ -9,6 +9,7 @@ const OrderAddContainer = () => {
   const [add, setAdd] = useState('');
   const [isOpen, setIsOpen] = useState(false);
 
+  //value 값 정해지면 추가하기 
   const addressData = [
     {ordererClassName: 'recipientName', orderLabel: '수령인', orderType: 'text', orderName: 'recipientName', orderPlaceholder: ' 수령인의 이름을 입력하세요'},
     {ordererClassName: 'recipientPhone', orderLabel: '연락처', orderType: 'number', orderName: 'recipientPhone', orderPlaceholder: ' -없이 입력'},
