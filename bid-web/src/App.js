@@ -9,6 +9,8 @@ import OrderPage from './Pages/OrderPage';
 import FinishOrderPage from './Pages/FinishOrderPage';
 import Mypage from './Pages/MyPage';
 import Productmanager from './Pages/ProductManager';
+import ProfileEditPage from './Pages/ProfileEditPage';
+import ManageAccountPage from './Pages/ManageAccountPage';
 
 const App = () => {
   return (
@@ -22,6 +24,8 @@ const App = () => {
       <Route path="/finishOrder" element={<FinishOrderPage />} />
       <Route path="/mypage" element={<Mypage />} />
       <Route path="/product-manage" element={<Productmanager />} />
+      <Route path="/profile-edit" element={<ProfileEditPage />} />
+      <Route path="/manage-account" element={<ManageAccountPage />} />
     </Routes>
   );
 }
